@@ -1,0 +1,16 @@
+LH01:
+  text: T33XA
+  position: [0, 1, 2, 3, 4]
+CG4233CLB2:
+  text: LV
+  position: [7,8]
+FGA2232CLB:
+  text: 32
+  position: [7,8]
+FGA2232TIB:
+  text: TMBB
+  position: [0, 1, 2, 3]
+FGA2232TCH2:
+  position: [7,8]
+  text: AR
+

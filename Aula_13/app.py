@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 import os
 from werkzeug.utils import secure_filename
 
@@ -15,6 +15,11 @@ def upload():
         savePath = os.path.join(UPLOAD_FOLDER, secure_filename(file.filename))
         file.save(savePath)
         return "Upload realizado"
+
+@app.route("/get-file/<filename>")
+def getfile(filename):
+        file = os.path.join(UPLOAD_FOLDER, filename + ".png")
+        return send_file(file, mimetype="image/png")
 
 
 
